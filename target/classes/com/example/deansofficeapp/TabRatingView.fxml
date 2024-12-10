@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.deansofficeapp.TabRatingController">
+   <children>
+      <TableView fx:id="rating_table" editable="true" layoutX="9.0" layoutY="96.0" prefHeight="460.0" prefWidth="763.0">
+        <columns>
+          <TableColumn fx:id="discipline_col" prefWidth="111.20001411437988" text="Предмет" />
+          <TableColumn fx:id="type_col" prefWidth="101.5999984741211" text="Тип занятия" />
+            <TableColumn fx:id="teacher_col" prefWidth="126.4000244140625" text="Преподаватель" />
+            <TableColumn fx:id="col_1" prefWidth="28.0" text="1" />
+            <TableColumn fx:id="col_2" prefWidth="28.0" text="2" />
+            <TableColumn fx:id="col_3" prefWidth="28.0" text="3" />
+            <TableColumn fx:id="col_4" prefWidth="28.0" text="4" />
+            <TableColumn fx:id="col_5" prefWidth="28.0" text="5" />
+            <TableColumn fx:id="col_6" prefWidth="28.0" text="6" />
+            <TableColumn fx:id="col_7" prefWidth="28.0" text="7" />
+            <TableColumn fx:id="col_8" minWidth="9.5999755859375" prefWidth="28.0" text="8" />
+            <TableColumn fx:id="col_9" prefWidth="28.0" text="9" />
+            <TableColumn fx:id="col_10" prefWidth="28.0" text="10" />
+            <TableColumn fx:id="col_11" prefWidth="28.0" text="11" />
+            <TableColumn fx:id="col_12" prefWidth="28.0" text="12" />
+            <TableColumn fx:id="col_13" prefWidth="28.0" text="13" />
+            <TableColumn fx:id="col_14" prefWidth="28.0" text="14" />
+            <TableColumn fx:id="col_15" prefWidth="28.0" text="15" />
+        </columns>
+      </TableView>
+      <Text layoutX="24.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Группа: " wrappingWidth="87.20000000000005">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="combo_group" layoutX="95.0" layoutY="38.0" onMouseClicked="#onMouseGroupComboClicked" prefHeight="27.0" prefWidth="159.0" />
+      <Text layoutX="267.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Студент: " wrappingWidth="109.96722412109375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="but_show_rating" layoutX="571.0" layoutY="32.0" mnemonicParsing="false" onMouseDragged="#onMouseShowClicked" text="Показать">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="combo_student" layoutX="345.0" layoutY="38.0" onMouseClicked="#onMouseStudentComboClicked" prefHeight="27.0" prefWidth="213.0" />
+      <Button fx:id="but_clear" layoutX="674.0" layoutY="32.0" mnemonicParsing="false" onMouseDragged="#onMouseClearClicked" text="Очистить">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

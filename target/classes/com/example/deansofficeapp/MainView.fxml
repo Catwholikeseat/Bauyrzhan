@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane fx:id="tab_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.deansofficeapp.MainController">
+  <tabs>
+      <Tab text="Преподаватели">
+         <content>
+            <ScrollPane fx:id="teacher" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab text="Студенты">
+         <content>
+            <ScrollPane fx:id="student" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab text="Оценки">
+         <content>
+            <ScrollPane fx:id="rating" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab text="Предметы">
+         <content>
+            <ScrollPane fx:id="discipline" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="26.0" layoutY="40.0" prefHeight="264.0" prefWidth="299.0" spacing="15.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Полное имя преподавателя:" wrappingWidth="299.01251220703125">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дата рождения: ">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Место прописки: " wrappingWidth="229.38751220703125">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Номер телефона: ">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Стаж работы:">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <TextField fx:id="fio_field" layoutX="333.0" layoutY="46.0" prefHeight="28.0" prefWidth="349.0" />
+      <TextField fx:id="birth_field" layoutX="333.0" layoutY="92.0" prefHeight="28.0" prefWidth="349.0" />
+      <TextField fx:id="place_field" layoutX="333.0" layoutY="136.0" prefHeight="28.0" prefWidth="349.0" />
+      <Button fx:id="clear_button" layoutX="33.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#clear" prefHeight="50.0" prefWidth="194.0" text="Очистить">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="create_or_edit_button" layoutX="487.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#create_or_edite" prefHeight="50.0" prefWidth="194.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <TextField fx:id="number_field" layoutX="333.0" layoutY="180.0" prefHeight="28.0" prefWidth="349.0" />
+      <TextField fx:id="experience_field" layoutX="333.0" layoutY="223.0" prefHeight="28.0" prefWidth="349.0" />
+   </children>
+</AnchorPane>

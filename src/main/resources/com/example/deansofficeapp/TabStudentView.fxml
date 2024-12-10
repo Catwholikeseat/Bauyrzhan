@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+
+<TreeTableView fx:id="stud_table" onMouseClicked="#onMouseClickedStudTable" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columns>
+    <TreeTableColumn fx:id="fio_stud_col" editable="false" prefWidth="216.79998779296875" sortable="false" text="ФИО" />
+      <TreeTableColumn fx:id="gender_col" editable="false" prefWidth="75.0" sortable="false" text="Пол" />
+    <TreeTableColumn fx:id="birth_stud_col" editable="false" prefWidth="145.60003662109375" sortable="false" text="Дата рождения" />
+      <TreeTableColumn fx:id="place_stud_col" editable="false" prefWidth="106.40008544921875" sortable="false" text="Место прописки" />
+      <TreeTableColumn fx:id="number_stud_col" editable="false" prefWidth="325.599853515625" sortable="false" text="Номер телефона" />
+  </columns>
+   <contextMenu>
+      <ContextMenu fx:id="context_stud_table" />
+   </contextMenu>
+</TreeTableView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+
+<TreeTableView fx:id="teacher_table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onMouseClickedTeacherTable" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.deansofficeapp.TabTeacherController">
+   <contextMenu>
+      <ContextMenu fx:id="context_teacher_table">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+        </items>
+      </ContextMenu>
+   </contextMenu>
+   <columns>
+      <TreeTableColumn fx:id="fio_teacher_col" prefWidth="229.60000610351562" text="ФИО" />
+      <TreeTableColumn fx:id="birth_teacher_col" prefWidth="153.5999755859375" text="Дата рождения" />
+      <TreeTableColumn fx:id="place_teacher_col" prefWidth="144.0" text="Место прописки" />
+      <TreeTableColumn fx:id="number_teacher_col" prefWidth="199.99993896484375" text="Номер телефона" />
+      <TreeTableColumn fx:id="experience_teacher_col" prefWidth="75.199951171875" text="Стаж" />
+   </columns>
+</TreeTableView>
